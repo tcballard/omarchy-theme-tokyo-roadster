@@ -17,8 +17,8 @@
     ],
     "space": "srgb",
     "depth": "uchar",
-    "bytes": 24127585,
-    "sha256": "5efd59fecdf885ce5de01724768f2fe9bd67501d9694bd0723e9b650f5ad24bd",
+    "bytes": 35790793,
+    "sha256": "9731b3cd0c1969e483ce75a992b76a3c7de5fa0a6ca2183fe0d69b0183acb4af",
     "decoded": true
   },
   "method": {
@@ -29,7 +29,7 @@
       1254
     ],
     "contextual_passes": 0,
-    "export_method": "Lanczos3 enlargement of generated colour/lighting edit",
+    "export_method": "Real-ESRGAN x4plus 4x super-resolution of the native generated edit, then Lanczos3 fit to export dimensions",
     "qa": "Full-frame and 512px actual-export rear wheel/body crop reviewed: no visible scaling seams, coherent wheel and door silhouettes, controlled blue-violet lighting. Style edit reinterprets fine star/ground detail; not exact pixel preservation.",
     "prompt": "Use case: lighting-weather / style-transfer. Edit this exact completed Roadster artwork into our punchy Tokyo Night colorway. Preserve the square composition and all existing geometry: silver car facing left, both scissor doors raised at exact angles, five-spoke wheels, wing, diffuser, four circular rear nozzles, cabin figure/hand shape, mountains and existing star field/Milky Way placement. Change COLOR AND LIGHTING ONLY. Nearly-black indigo sky #10111b, electric periwinkle blue #7aa2f7 and icy cyan #7dcfff highlights, saturated violet #bb9af7 and controlled pink-violet #f7768e reflections. Existing red taillight and warm cabin light become vivid blue-violet with pale luminous cores and tight bloom. Bright clean silver panels with blue and violet reflected edges; black glass stays dark. Cool violet-blue horizon glow; retain stars without adding constellations or excessive nebula effects. Rich cinematic contrast, premium automotive render finish; avoid noise, coarse metallic texture, halos, extra light strips, new objects, altered proportions, invented text or changed pose. Return the full original square framing at maximum practical native resolution.\n"
   },
@@ -58,5 +58,14 @@
     "prompt": "Use case: precise-object-edit. Asset: 16:9 desktop wallpaper. Outpaint this square Starlight artwork LEFT AND RIGHT into a wide 16:9 landscape at maximum practical native resolution (prefer 2048x1152). Keep the complete original square scene centered at the same proportions and entirely visible, extending starry night sky, distant mountain horizon and ground naturally on both sides. Entire car stays in lower middle at roughly 52% canvas width, all wheels, front nose, rear wing and both tall raised scissor doors fully visible, generous side margins. Do not crop vertically, do not enlarge car to fill width, do not stretch the car. Preserve exact car design, five-spoke wheels, panel edges, wing, four rear nozzles, door angles, existing cabin details, starfield character. No extra vehicles, people, lettering, borders or panels. One seamless full-bleed landscape. Preserve punchy Tokyo Night lighting and color: nearly-black indigo sky, periwinkle electric blue, icy silver highlights, violet and pink-violet edges and ground reflections. Retain this premium photoreal render finish.",
     "ratio_adjustment": "Native aspect is within 0.1% of 16:9; negligible centred edge crop on export. Car is not stretched.",
     "qa": "Full-frame reviewed: both raised doors, both visible wheels, front nose and complete rear wing in frame with broad side margins. AI edit reconstructs scene detail; original pixels are not claimed unchanged."
+  },
+  "upscale": {
+    "model": "realesrgan-x4plus",
+    "tool": "realesrgan-ncnn-vulkan v0.2.5.0 (xinntao/Real-ESRGAN)",
+    "pipeline": "previous export Lanczos-downscaled to native size, Real-ESRGAN 4x, Lanczos3 fit to the unchanged export dimensions",
+    "native": [
+      1672,
+      941
+    ]
   }
 }
