@@ -31,7 +31,7 @@ Uses Omarchy's built-in Tokyo Night semantic palette. Red remains an error colou
 
 Includes all ten Tokyo Roadster colourways: wall-ride, lineup, hover, ramp, inverted, rear, diffuser, studio, the ROADSTER event poster and Starlight. The approved wall-ride remains the default, unchanged. Omarchy cycles through the complete set.
 
-Each image is exported as a lossless PNG with an 8192-pixel longest edge, upscaled from its native generated artwork with Real-ESRGAN (x4plus, 4x) and fitted to size with Lanczos. These are AI style edits followed by AI super-resolution, not native 8K generations or a new two-pass contextual enhancement. See [generation details](docs/WALLPAPER-GENERATION.json).
+All ten images are lossless PNGs with an 8192-pixel longest edge. The approved wall-ride retains its original Lanczos export byte-for-byte. The other nine use Real-ESRGAN x4plus (4x), then a Lanczos fit, on copies of the previous exports downsampled to the recorded native dimensions. They do not use the original native generation files. These are AI style edits and reconstructed detail, not native 8K generations or new contextual enhancement passes. The collection totals 297.6 MB (283.8 MiB), up from 166.0 MB; full clones also retain older images in Git history. See [generation details](docs/WALLPAPER-GENERATION.json).
 
 Starlight is a 16:9 desktop scene at 8192 × 4608, extended sideways to keep the full car, both raised doors and rear wing visible beneath a blue-violet starry sky. [Processing details](docs/STARLIGHT-PROCESSING.json).
 

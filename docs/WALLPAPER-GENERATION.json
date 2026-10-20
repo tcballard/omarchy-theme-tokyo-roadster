@@ -1,5 +1,5 @@
 {
-  "method": "Built-in image generation style transfer, then Real-ESRGAN x4plus 4x super-resolution from the native generated size and a Lanczos3 fit to the 8192-pixel export; no new contextual enhancement passes.",
+  "method": "Built-in image generation style transfer. Approved wall-ride default retains its original Lanczos3 export byte-for-byte. The other nine previous exports were downsampled to recorded native dimensions, processed with Real-ESRGAN x4plus 4x super-resolution, then Lanczos-fitted to their existing export dimensions; no new contextual enhancement passes.",
   "prompt": "Use case: style-transfer. Edit IMAGE 1 only; IMAGE 2 is the approved Tokyo Roadster color/lighting reference, not a composition to copy. Preserve image 1's entire composition, camera, vehicles, exact silhouettes, scale, positions and negative space. Apply the same punchy cinematic Tokyo Night styling: nearly-black indigo shadows, vivid electric periwinkle-blue existing light strips with tight bloom and pale cores, violet and subtle pink-violet secondary reflections, icy cyan highlights and smoke, luminous silver metal with black glass. Replace red illumination with blue/violet. Rich contrast without crushing vehicle details, photoreal materials. No extra objects, city, lettering, or fixtures. Keep original aspect ratio and framing. Output a single finished wallpaper, not a collage.",
   "images": [
     {
@@ -12,9 +12,9 @@
         8192,
         5461
       ],
-      "unchanged_approved_default": false,
-      "sha256": "45e5c3889f4cc98ca1cc63b870c06b10619e189041d79a4d32009deb33c57400",
-      "bytes": 27841245
+      "unchanged_approved_default": true,
+      "sha256": "f9c2b4c8728d761c805f0e6d796f1f7554db5a3266552fd8b613222d6d113413",
+      "bytes": 11370461
     },
     {
       "file": "backgrounds/02-tokyo-lineup-8k.png",
@@ -28,7 +28,8 @@
       ],
       "source_sha256": "ec0dfa25351cbc83384ad12b07343103242f7405655705e2b46955ee33063799",
       "sha256": "39e5899a2326e510af0cf992a1102211007b82593d841e3c09ff57a10bd06bca",
-      "bytes": 27682002
+      "bytes": 27682002,
+      "upscale_input_sha256": "69b025f54ac72887a1bd2ccf67bc89c8cbed0ea723adf2131791472cfd73f9cf"
     },
     {
       "file": "backgrounds/03-tokyo-hover-8k.png",
@@ -42,7 +43,8 @@
       ],
       "source_sha256": "07a32ba45cf0dfefd754b8125948066ee88cca0239d1f433654ac57ad7c7ab04",
       "sha256": "016330d48d3b60598b3eda474422a8dd2a389703106e540a76418bec19173a26",
-      "bytes": 40684444
+      "bytes": 40684444,
+      "upscale_input_sha256": "58723330158770a7b9ab5f2d1664da1c17ce01d225292c987b3b38bf91c675c4"
     },
     {
       "file": "backgrounds/04-tokyo-ramp-8k.png",
@@ -56,7 +58,8 @@
       ],
       "source_sha256": "add13d90fe1af82d08f071b04e0b1cca0003e9fc536ea68f48bbb82ddb537246",
       "sha256": "0ff1f2ea0c2ddbf7a127071dc61d2c1b98ac56351bc75ea85f90f9032138ae40",
-      "bytes": 28193796
+      "bytes": 28193796,
+      "upscale_input_sha256": "a653b820d80f539065d19d82c7db1196b2f79da329aa40a0a370d53b8023f7e3"
     },
     {
       "file": "backgrounds/05-tokyo-inverted-8k.png",
@@ -70,7 +73,8 @@
       ],
       "source_sha256": "d1b5311afced5bff619f9dfb39e84fa52c464ec38da6c80215f98de6c120d7b0",
       "sha256": "530cc4a905db1ee1e7f464cbc346397e12707d9aa94cb4594aeb94e3414c079a",
-      "bytes": 26057351
+      "bytes": 26057351,
+      "upscale_input_sha256": "bbc3a3696253cdc4ccb2e0114aa614b1c82fcda5abb09ef291a792f70a045ed0"
     },
     {
       "file": "backgrounds/06-tokyo-rear-8k.png",
@@ -84,7 +88,8 @@
       ],
       "source_sha256": "cc6b57de9c52f46f90f4844ba372c2eb1b7fdda600822d6507f8713855f1259f",
       "sha256": "07470523275d43314b2dfa935a18c8b48f7c3887cd48396ff2f5311499717e0d",
-      "bytes": 36663375
+      "bytes": 36663375,
+      "upscale_input_sha256": "e4158a1d7da90e3a98de1135da5612e5bcc50f756389ae25f64a3aca293e1f50"
     },
     {
       "file": "backgrounds/07-tokyo-diffuser-8k.png",
@@ -98,7 +103,8 @@
       ],
       "source_sha256": "633cd71f65ca876ac4212b290c0a6f030afc6f8420b496a6bd698c7371d33ffe",
       "sha256": "08de8c05c87d7cfb840e433fc647de45756bbb08ea9bb03eff5c72bb983c580a",
-      "bytes": 34807293
+      "bytes": 34807293,
+      "upscale_input_sha256": "dc65d83ca4ff2757f31203e1c136505b07183a3d400c2268ac6758b64c174383"
     },
     {
       "file": "backgrounds/08-tokyo-studio-8k.png",
@@ -112,7 +118,8 @@
       ],
       "source_sha256": "3fbf034b0003470d55c844b2a6d8295aec2d960ce641424f53490f1575984d89",
       "sha256": "80147bfdba1e376a73bb70cbfbc12c541bd3cd69abe2cdba1b6524468fcacebd",
-      "bytes": 30741456
+      "bytes": 30741456,
+      "upscale_input_sha256": "ac3c343a630ca3fb8161b97137b62e2279a1f36308dedc9c7842d7f9949c1a6d"
     },
     {
       "file": "backgrounds/09-tokyo-poster-8k.png",
@@ -127,7 +134,8 @@
       "method": "Built-in image generation Tokyo Night colour/lighting style edit, then Real-ESRGAN x4plus and Lanczos3 fit to the source 16:9 export; no contextual enhancement passes on this variant.",
       "source_sha256": "3e44a2a2c8a5ac6631708d46c60e9982960fdd818e5601767e92deedcb1d2ba4",
       "sha256": "72815f4ca3aba513035c9492f050753bc7f6a76e21951abe392197f81017c73f",
-      "bytes": 25633139
+      "bytes": 25633139,
+      "upscale_input_sha256": "4bbad90a92e4cd24fb7e65e92e623c20b609713bbdb588cb3d4fa8da05c50761"
     },
     {
       "file": "backgrounds/10-tokyo-starlight-8k.png",
@@ -141,12 +149,31 @@
       ],
       "method": "AI 16:9 scene extension of the Tokyo Night Starlight artwork, then Real-ESRGAN x4plus and Lanczos3 fit to export; no new contextual enhancement passes.",
       "sha256": "9731b3cd0c1969e483ce75a992b76a3c7de5fa0a6ca2183fe0d69b0183acb4af",
-      "bytes": 35790793
+      "bytes": 35790793,
+      "upscale_input_sha256": "5efd59fecdf885ce5de01724768f2fe9bd67501d9694bd0723e9b650f5ad24bd"
     }
   ],
   "upscale": {
     "model": "realesrgan-x4plus",
-    "tool": "realesrgan-ncnn-vulkan v0.2.5.0 (xinntao/Real-ESRGAN)",
-    "pipeline": "previous export Lanczos-downscaled to native size, Real-ESRGAN 4x, Lanczos3 fit to the unchanged export dimensions"
+    "tool": "realesrgan-ncnn-vulkan (contributor-reported version v0.2.5.0; unverified)",
+    "pipeline": "Existing exported PNG at input_commit, Lanczos-downsampled to recorded native dimensions (not the original native generation file), Real-ESRGAN x4plus 4x, Lanczos3 fit to unchanged export dimensions.",
+    "applies_to": [
+      "backgrounds/02-tokyo-lineup-8k.png",
+      "backgrounds/03-tokyo-hover-8k.png",
+      "backgrounds/04-tokyo-ramp-8k.png",
+      "backgrounds/05-tokyo-inverted-8k.png",
+      "backgrounds/06-tokyo-rear-8k.png",
+      "backgrounds/07-tokyo-diffuser-8k.png",
+      "backgrounds/08-tokyo-studio-8k.png",
+      "backgrounds/09-tokyo-poster-8k.png",
+      "backgrounds/10-tokyo-starlight-8k.png"
+    ],
+    "input_commit": "3124da34f9d82b3806d488f8e0efe8b1ae2b5878",
+    "tool_source": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan",
+    "tool_licence": "MIT",
+    "model_project": "https://github.com/xinntao/Real-ESRGAN",
+    "model_project_licence": "BSD-3-Clause",
+    "reproduction_status": "Pending contributor confirmation of executable source/version, invocation/options and model file hashes. Upscale was not rerun by the reviewer.",
+    "max_final_fit_scale": 1.5386927122464313
   }
 }

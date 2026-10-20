@@ -8,7 +8,7 @@ Contrast: text/background 8.10:1; text/selection 6.36:1; blue accent/background 
 
 NOT RUN: live XPS display, mixed scale, all shell orientations, keyboard/mouse interaction, lock screen, notification, GTK/terminal/editor reloads, shell restart/login, registry validator. Rust scaffold helper unavailable because cargo is not installed. No live preview or stable-release claim.
 
-Wallpaper dimensions are Real-ESRGAN x4plus upscales of generated artwork, fitted to export size with Lanczos; no extra contextual enhancement passes are claimed.
+Wallpaper dimensions describe exports. The approved default retains its original Lanczos export; nine others use Real-ESRGAN x4plus on downsampled previous exports, then a Lanczos fit. No extra contextual enhancement passes are claimed.
 
 Full-set update: PASS — all eight PNG exports fully decoded; SHA256SUMS passed for every wallpaper; default wall-ride bytes unchanged from the previous commit. Real upstream Git-installed headless staging verified all eight wallpapers in order, wraparound to the default, and retention of the selected wallpaper after switching away and back. Portable repository checks and five Node tests passed. Live desktop checks remain NOT RUN.
 
@@ -20,3 +20,5 @@ Starlight addition: tenth wallpaper, lossless RGB8 sRGB PNG at 8192 × 8192, cop
 Starlight widescreen correction: 8192 × 4608 lossless RGB8 sRGB PNG, replacing the square desktop asset. AI scene extension keeps the full car, doors and wing inside a 16:9 frame; native generated dimensions and previous square export are retained in STARLIGHT-PROCESSING.json. Both exports fully decoded and full-frame/detail reviewed. Other nine wallpaper bytes and default remain unchanged. Portable checks and checksums rerun; live desktop acceptance remains pending.
 
 Real-ESRGAN upscale: all ten wallpapers re-exported at unchanged dimensions as lossless RGB8 sRGB PNG. Each previous export was Lanczos-downscaled to its native generated size, upscaled 4x with realesrgan-ncnn-vulkan v0.2.5.0 (realesrgan-x4plus) and Lanczos-fitted back to the export size. All ten fully decoded; full-frame contact sheet and 100% crops reviewed against the previous exports; mean luminance within +0.01. SHA256SUMS regenerated and verified; portable checks rerun. Live desktop acceptance remains pending.
+
+PR #9 maintainer review, 20 October 2026: the preceding all-ten upscale entry records the contributor candidate efd3847, not the corrected acceptance state. The approved wall-ride has been restored byte-for-byte to f9c2b4c8728d761c805f0e6d796f1f7554db5a3266552fd8b613222d6d113413. See [review evidence](reviews/PR9.md) for independent decoding, CRC/hash checks, visual comparisons, size impact and outstanding provenance/physical acceptance. No new live acceptance or media rights are asserted.

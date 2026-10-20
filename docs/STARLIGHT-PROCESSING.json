@@ -29,7 +29,7 @@
       1254
     ],
     "contextual_passes": 0,
-    "export_method": "Real-ESRGAN x4plus 4x super-resolution of the native generated edit, then Lanczos3 fit to export dimensions",
+    "export_method": "Lanczos3 enlargement of generated colour/lighting edit",
     "qa": "Full-frame and 512px actual-export rear wheel/body crop reviewed: no visible scaling seams, coherent wheel and door silhouettes, controlled blue-violet lighting. Style edit reinterprets fine star/ground detail; not exact pixel preservation.",
     "prompt": "Use case: lighting-weather / style-transfer. Edit this exact completed Roadster artwork into our punchy Tokyo Night colorway. Preserve the square composition and all existing geometry: silver car facing left, both scissor doors raised at exact angles, five-spoke wheels, wing, diffuser, four circular rear nozzles, cabin figure/hand shape, mountains and existing star field/Milky Way placement. Change COLOR AND LIGHTING ONLY. Nearly-black indigo sky #10111b, electric periwinkle blue #7aa2f7 and icy cyan #7dcfff highlights, saturated violet #bb9af7 and controlled pink-violet #f7768e reflections. Existing red taillight and warm cabin light become vivid blue-violet with pale luminous cores and tight bloom. Bright clean silver panels with blue and violet reflected edges; black glass stays dark. Cool violet-blue horizon glow; retain stars without adding constellations or excessive nebula effects. Rich cinematic contrast, premium automotive render finish; avoid noise, coarse metallic texture, halos, extra light strips, new objects, altered proportions, invented text or changed pose. Return the full original square framing at maximum practical native resolution.\n"
   },
@@ -61,11 +61,22 @@
   },
   "upscale": {
     "model": "realesrgan-x4plus",
-    "tool": "realesrgan-ncnn-vulkan v0.2.5.0 (xinntao/Real-ESRGAN)",
-    "pipeline": "previous export Lanczos-downscaled to native size, Real-ESRGAN 4x, Lanczos3 fit to the unchanged export dimensions",
+    "tool": "realesrgan-ncnn-vulkan (contributor-reported version v0.2.5.0; unverified)",
+    "pipeline": "Existing exported PNG at input_commit, Lanczos-downsampled to recorded native dimensions (not the original native generation file), Real-ESRGAN x4plus 4x, Lanczos3 fit to unchanged export dimensions.",
+    "applies_to": [
+      "backgrounds/10-tokyo-starlight-8k.png"
+    ],
+    "input_commit": "3124da34f9d82b3806d488f8e0efe8b1ae2b5878",
+    "tool_source": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan",
+    "tool_licence": "MIT",
+    "model_project": "https://github.com/xinntao/Real-ESRGAN",
+    "model_project_licence": "BSD-3-Clause",
+    "reproduction_status": "Pending contributor confirmation of executable source/version, invocation/options and model file hashes. Upscale was not rerun by the reviewer.",
+    "max_final_fit_scale": 1.5386927122464313,
     "native": [
       1672,
       941
-    ]
+    ],
+    "input_sha256": "5efd59fecdf885ce5de01724768f2fe9bd67501d9694bd0723e9b650f5ad24bd"
   }
 }
