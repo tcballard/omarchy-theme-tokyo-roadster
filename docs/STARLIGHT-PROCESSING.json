@@ -17,8 +17,8 @@
     ],
     "space": "srgb",
     "depth": "uchar",
-    "bytes": 24127585,
-    "sha256": "5efd59fecdf885ce5de01724768f2fe9bd67501d9694bd0723e9b650f5ad24bd",
+    "bytes": 35790793,
+    "sha256": "9731b3cd0c1969e483ce75a992b76a3c7de5fa0a6ca2183fe0d69b0183acb4af",
     "decoded": true
   },
   "method": {
@@ -58,5 +58,25 @@
     "prompt": "Use case: precise-object-edit. Asset: 16:9 desktop wallpaper. Outpaint this square Starlight artwork LEFT AND RIGHT into a wide 16:9 landscape at maximum practical native resolution (prefer 2048x1152). Keep the complete original square scene centered at the same proportions and entirely visible, extending starry night sky, distant mountain horizon and ground naturally on both sides. Entire car stays in lower middle at roughly 52% canvas width, all wheels, front nose, rear wing and both tall raised scissor doors fully visible, generous side margins. Do not crop vertically, do not enlarge car to fill width, do not stretch the car. Preserve exact car design, five-spoke wheels, panel edges, wing, four rear nozzles, door angles, existing cabin details, starfield character. No extra vehicles, people, lettering, borders or panels. One seamless full-bleed landscape. Preserve punchy Tokyo Night lighting and color: nearly-black indigo sky, periwinkle electric blue, icy silver highlights, violet and pink-violet edges and ground reflections. Retain this premium photoreal render finish.",
     "ratio_adjustment": "Native aspect is within 0.1% of 16:9; negligible centred edge crop on export. Car is not stretched.",
     "qa": "Full-frame reviewed: both raised doors, both visible wheels, front nose and complete rear wing in frame with broad side margins. AI edit reconstructs scene detail; original pixels are not claimed unchanged."
+  },
+  "upscale": {
+    "model": "realesrgan-x4plus",
+    "tool": "realesrgan-ncnn-vulkan (contributor-reported version v0.2.5.0; unverified)",
+    "pipeline": "Existing exported PNG at input_commit, Lanczos-downsampled to recorded native dimensions (not the original native generation file), Real-ESRGAN x4plus 4x, Lanczos3 fit to unchanged export dimensions.",
+    "applies_to": [
+      "backgrounds/10-tokyo-starlight-8k.png"
+    ],
+    "input_commit": "3124da34f9d82b3806d488f8e0efe8b1ae2b5878",
+    "tool_source": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan",
+    "tool_licence": "MIT",
+    "model_project": "https://github.com/xinntao/Real-ESRGAN",
+    "model_project_licence": "BSD-3-Clause",
+    "reproduction_status": "Pending contributor confirmation of executable source/version, invocation/options and model file hashes. Upscale was not rerun by the reviewer.",
+    "max_final_fit_scale": 1.5386927122464313,
+    "native": [
+      1672,
+      941
+    ],
+    "input_sha256": "5efd59fecdf885ce5de01724768f2fe9bd67501d9694bd0723e9b650f5ad24bd"
   }
 }

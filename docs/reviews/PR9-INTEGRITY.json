@@ -1,0 +1,531 @@
+{
+  "date": "2026-10-20",
+  "base_commit": "3124da34f9d82b3806d488f8e0efe8b1ae2b5878",
+  "contributor_commit": "efd384745e896652a9e394c054cec74cdb35f0ef",
+  "scope": "Original PR candidate before default restoration; after means contributor candidate, not corrected branch.",
+  "measurements": [
+    {
+      "file": "backgrounds/01-tokyo-wall-ride-8k.png",
+      "before": {
+        "bytes": 11370461,
+        "sha256": "f9c2b4c8728d761c805f0e6d796f1f7554db5a3266552fd8b613222d6d113413",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "iCCP",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 751.1826619999999,
+        "mean_encoded_rgb": [
+          0.06817622531046937,
+          0.08763905809752816,
+          0.22640387808331588
+        ]
+      },
+      "after": {
+        "bytes": 27841245,
+        "sha256": "45e5c3889f4cc98ca1cc63b870c06b10619e189041d79a4d32009deb33c57400",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 507.20425099999966,
+        "mean_encoded_rgb": [
+          0.06738884336722482,
+          0.09523285212172596,
+          0.2385699679429976
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/02-tokyo-lineup-8k.png",
+      "before": {
+        "bytes": 10153539,
+        "sha256": "69b025f54ac72887a1bd2ccf67bc89c8cbed0ea723adf2131791472cfd73f9cf",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 366.65155100000084,
+        "mean_encoded_rgb": [
+          0.0631937181947369,
+          0.0837782249079643,
+          0.23740229321181322
+        ]
+      },
+      "after": {
+        "bytes": 27682002,
+        "sha256": "39e5899a2326e510af0cf992a1102211007b82593d841e3c09ff57a10bd06bca",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 483.39452100000017,
+        "mean_encoded_rgb": [
+          0.06280277873611032,
+          0.09162410244518497,
+          0.24973244063000496
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/03-tokyo-hover-8k.png",
+      "before": {
+        "bytes": 20113672,
+        "sha256": "58723330158770a7b9ab5f2d1664da1c17ce01d225292c987b3b38bf91c675c4",
+        "width": 8192,
+        "height": 7269,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 178642944,
+        "decode_ms": 592.9059719999996,
+        "mean_encoded_rgb": [
+          0.13904573048937158,
+          0.2166311875108285,
+          0.42598209610109483
+        ]
+      },
+      "after": {
+        "bytes": 40684444,
+        "sha256": "016330d48d3b60598b3eda474422a8dd2a389703106e540a76418bec19173a26",
+        "width": 8192,
+        "height": 7269,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 178642944,
+        "decode_ms": 651.6752310000011,
+        "mean_encoded_rgb": [
+          0.14072519529568003,
+          0.22214172632160414,
+          0.4310523593390171
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/04-tokyo-ramp-8k.png",
+      "before": {
+        "bytes": 12050442,
+        "sha256": "a653b820d80f539065d19d82c7db1196b2f79da329aa40a0a370d53b8023f7e3",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 455.0353560000003,
+        "mean_encoded_rgb": [
+          0.05958786602983027,
+          0.09236211438383614,
+          0.256842799436289
+        ]
+      },
+      "after": {
+        "bytes": 28193796,
+        "sha256": "0ff1f2ea0c2ddbf7a127071dc61d2c1b98ac56351bc75ea85f90f9032138ae40",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 468.499065,
+        "mean_encoded_rgb": [
+          0.06133250495944826,
+          0.10127405159272392,
+          0.2669520154100574
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/05-tokyo-inverted-8k.png",
+      "before": {
+        "bytes": 11134092,
+        "sha256": "bbc3a3696253cdc4ccb2e0114aa614b1c82fcda5abb09ef291a792f70a045ed0",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 394.8433750000004,
+        "mean_encoded_rgb": [
+          0.06344672262230859,
+          0.08035612888846703,
+          0.2166636343868804
+        ]
+      },
+      "after": {
+        "bytes": 26057351,
+        "sha256": "530cc4a905db1ee1e7f464cbc346397e12707d9aa94cb4594aeb94e3414c079a",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 407.9204630000004,
+        "mean_encoded_rgb": [
+          0.06595484463944179,
+          0.09136128241614165,
+          0.2330677505604544
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/06-tokyo-rear-8k.png",
+      "before": {
+        "bytes": 19023960,
+        "sha256": "e4158a1d7da90e3a98de1135da5612e5bcc50f756389ae25f64a3aca293e1f50",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 448.80630700000074,
+        "mean_encoded_rgb": [
+          0.08260634990794642,
+          0.13882434251183856,
+          0.3847184112828224
+        ]
+      },
+      "after": {
+        "bytes": 36663375,
+        "sha256": "07470523275d43314b2dfa935a18c8b48f7c3887cd48396ff2f5311499717e0d",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 531.920734000003,
+        "mean_encoded_rgb": [
+          0.08096197835800842,
+          0.14220061741695786,
+          0.3893986787343691
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/07-tokyo-diffuser-8k.png",
+      "before": {
+        "bytes": 17509704,
+        "sha256": "dc65d83ca4ff2757f31203e1c136505b07183a3d400c2268ac6758b64c174383",
+        "width": 8192,
+        "height": 6144,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 150994944,
+        "decode_ms": 520.5048400000014,
+        "mean_encoded_rgb": [
+          0.09997307272518036,
+          0.1451310899522902,
+          0.323216796077202
+        ]
+      },
+      "after": {
+        "bytes": 34807293,
+        "sha256": "08de8c05c87d7cfb840e433fc647de45756bbb08ea9bb03eff5c72bb983c580a",
+        "width": 8192,
+        "height": 6144,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 150994944,
+        "decode_ms": 560.4979309999981,
+        "mean_encoded_rgb": [
+          0.09960109735624982,
+          0.15071012210222134,
+          0.3312158721723504
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/08-tokyo-studio-8k.png",
+      "before": {
+        "bytes": 13300568,
+        "sha256": "ac3c343a630ca3fb8161b97137b62e2279a1f36308dedc9c7842d7f9949c1a6d",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 379.4979110000022,
+        "mean_encoded_rgb": [
+          0.04974841063622998,
+          0.08110404627389606,
+          0.27145551218997827
+        ]
+      },
+      "after": {
+        "bytes": 30741456,
+        "sha256": "80147bfdba1e376a73bb70cbfbc12c541bd3cd69abe2cdba1b6524468fcacebd",
+        "width": 8192,
+        "height": 5461,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 134209536,
+        "decode_ms": 478.3669829999999,
+        "mean_encoded_rgb": [
+          0.05003649966216298,
+          0.08886600828009254,
+          0.27973118728771856
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/09-tokyo-poster-8k.png",
+      "before": {
+        "bytes": 27257706,
+        "sha256": "4bbad90a92e4cd24fb7e65e92e623c20b609713bbdb588cb3d4fa8da05c50761",
+        "width": 8192,
+        "height": 4608,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "iCCP",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 113246208,
+        "decode_ms": 444.90206000000035,
+        "mean_encoded_rgb": [
+          0.04635007106138746,
+          0.0704396765216459,
+          0.22321242787480697
+        ]
+      },
+      "after": {
+        "bytes": 25633139,
+        "sha256": "72815f4ca3aba513035c9492f050753bc7f6a76e21951abe392197f81017c73f",
+        "width": 8192,
+        "height": 4608,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 113246208,
+        "decode_ms": 416.2230230000023,
+        "mean_encoded_rgb": [
+          0.0447904698988717,
+          0.07821970422281785,
+          0.2350380093443543
+        ]
+      }
+    },
+    {
+      "file": "backgrounds/10-tokyo-starlight-8k.png",
+      "before": {
+        "bytes": 24127585,
+        "sha256": "5efd59fecdf885ce5de01724768f2fe9bd67501d9694bd0723e9b650f5ad24bd",
+        "width": 8192,
+        "height": 4608,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "iCCP",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 113246208,
+        "decode_ms": 628.4786669999994,
+        "mean_encoded_rgb": [
+          0.11780628212657575,
+          0.12223450903799547,
+          0.32219977617782614
+        ]
+      },
+      "after": {
+        "bytes": 35790793,
+        "sha256": "9731b3cd0c1969e483ce75a992b76a3c7de5fa0a6ca2183fe0d69b0183acb4af",
+        "width": 8192,
+        "height": 4608,
+        "space": "srgb",
+        "depth": "uchar",
+        "channels": 3,
+        "hasAlpha": false,
+        "chunks": [
+          "IHDR",
+          "cHRM",
+          "bKGD",
+          "tIME",
+          "tEXt",
+          "IDAT",
+          "IEND"
+        ],
+        "decoded_bytes": 113246208,
+        "decode_ms": 514.0409120000004,
+        "mean_encoded_rgb": [
+          0.11671504267941778,
+          0.1262668451712289,
+          0.32656460099232226
+        ]
+      }
+    }
+  ]
+}
